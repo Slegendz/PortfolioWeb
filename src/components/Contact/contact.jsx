@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import contactImg from "./../../assets/Img/contact-img.svg";
 import "./contact.scss";
 import "animate.css";
-import TrackVisibility from "react-on-screen";
 
 const contact = () => {
   const formInitialDetails = {
@@ -25,7 +24,7 @@ const contact = () => {
     e.preventDefault();
 
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://mailapi-7xjz.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "Application/json;charset=utf-8",
