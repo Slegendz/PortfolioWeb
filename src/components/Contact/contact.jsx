@@ -27,7 +27,7 @@ const contact = () => {
     let response = await fetch("https://mailapi-7xjz.onrender.com/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "Application/json;charset=utf-8",
+        "Content-Type": "Application/json",
       },
       body: JSON.stringify(formDetails),
     });
