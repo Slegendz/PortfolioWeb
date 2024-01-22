@@ -9,7 +9,7 @@ const footer = () => {
   return (
     <div className="footer">
       <div className="footer-upper">
-        {/* <MailChimpForm /> */}
+        <MailChimpForm />
       </div>
 
       <div className="footer-lower">
