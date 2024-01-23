@@ -2,7 +2,7 @@ import projImg1 from "./../../assets/Img/project-img1.png";
 import projImg2 from "./../../assets/Img/project-img2.png";
 import projImg3 from "./../../assets/Img/project-img3.png";
 import "./projects.scss";
-import { useState } from "react";
+import React, { useState } from "react";
 import "animate.css";
 import ProjectCard from "./../ProjectCard/projectCard";
 import colorSharp from "../../assets/Img/color-sharp2.png";

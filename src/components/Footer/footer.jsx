@@ -4,6 +4,7 @@ import navIcon1 from "../../assets/Img/nav-icon1.svg";
 import navIcon2 from "../../assets/Img/nav-icon2.svg";
 import navIcon3 from "../../assets/Img/nav-icon3.svg";
 import "./footer.scss";
+import React from 'react';
 
 const footer = () => {
   return (

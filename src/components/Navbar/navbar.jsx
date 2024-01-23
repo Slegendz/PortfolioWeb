@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from "../../assets/Img/logo.svg";
 import navIcon1 from "../../assets/Img/nav-icon1.svg";
 import navIcon2 from "../../assets/Img/nav-icon2.svg";

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import contactImg from "./../../assets/Img/contact-img.svg";
 import "./contact.scss";
 import "animate.css";
