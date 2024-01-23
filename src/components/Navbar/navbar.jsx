@@ -5,7 +5,7 @@ import navIcon3 from "../../assets/Img/nav-icon3.svg";
 import { useState, useEffect } from "react";
 import "./navbar.scss";
 
-function navbar() {
+const navbar = () => {
   const [ activeLink, setActiveLink ] = useState("home");
   const [ scrolled, setScrolled ] = useState(false);
 
