@@ -9,13 +9,13 @@ function App() {
   return (
     <div className = "App">
       <Navbar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      {/* <Banner /> */}
+      {/* <Skills /> */}
+      {/* <Projects /> */}
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   )
 }
 
-export default App
+export default App;
