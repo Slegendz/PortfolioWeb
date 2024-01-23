@@ -1,4 +1,5 @@
 import "./projectCard.scss";
+import React from 'react';
 
 const projectCard = ({ title, description, imgUrl }) => {
   return (

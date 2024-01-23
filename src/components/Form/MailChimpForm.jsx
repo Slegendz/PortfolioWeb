@@ -1,5 +1,6 @@
 import MailChimpSubscribe from "react-mailchimp-subscribe";
 import Newsletter from "./Newsletter";
+import React from 'react'
 
 const MailChimpForm = () => {
   const postUrl = `${import.meta.env.VITE_MAILCHIMP_URL}?u=${
