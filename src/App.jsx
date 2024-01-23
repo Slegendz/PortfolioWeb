@@ -1,3 +1,4 @@
+import React from 'react';
 import Banner from "./components/Banner/banner";
 import Navbar from "./components/Navbar/navbar";
 import Skills from "./components/Skills/skills";
