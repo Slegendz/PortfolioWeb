@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../../assets/Img/header-img.svg";
-import "./banner.scss";
-import "animate.css";
 import TrackVisibility from "react-on-screen";
+import headerImg from "../../assets/Img/header-img.svg";
+import "animate.css";
+import "./banner.scss";
 
 const Banner = () => {
   const toRotate = ["Web Developer", "Leetcoder", "UI/UX developer"];
