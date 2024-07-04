@@ -1,7 +1,7 @@
 .contact {
   width: 100%;
   padding: 2rem 4rem 8rem 4rem;
-  margin: 1.5rem 0 3rem 0;
+  margin: 1rem 0 0 0;
   display: flex;
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
   z-index: -1;
@@ -255,6 +255,7 @@
 @media screen and (max-width: 768px) {
   .contact {
     flex-direction: column;
+    margin: 0.5rem 0 0 0;
     padding: 2rem 2rem 7rem 2rem;
 
     .contact-img {

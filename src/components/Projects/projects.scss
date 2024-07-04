@@ -10,6 +10,7 @@
 
     .project-heading {
       width: 100%;
+      margin-bottom: 1rem;
 
       h2 {
         font-size: 2.5rem;
@@ -24,69 +25,7 @@
     }
 
     .project-content {
-      display: flex;
-      flex-direction: column;
       width: 100%;
-      align-items: center;
-
-      .project-tabs {
-        display: flex;
-        margin: 2.5rem;
-        border: 4px solid white;
-        width: 60%;
-        justify-content: space-evenly;
-        border-radius: 30px;
-
-        p {
-          font-size: 1.2rem;
-          cursor: pointer;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 50px;
-          position: relative;
-          border-right: 2px solid white;
-          
-          &::before {
-            content: "";
-            background-color: rgba(235, 14, 88, 0.881);
-            width: 0;
-            height: 50px;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            position: absolute;
-            transition: width 0.3s ease-in-out;
-          }
-          
-          &:last-child {
-            &::before {
-              border-radius: 0 30px 30px 0;
-            }
-          }
-
-          &:first-child {
-            &::before {
-              border-radius: 30px 0 0 30px;
-            }
-          }
-
-          &:hover {
-            &::before {
-              width: 100%;
-            }
-          }
-        }
-
-        .active::before {
-          width: 100%;
-        }
-
-        p:last-child {
-          border: none;
-        }
-      }
 
       .project-cards {
         width: 100%;
@@ -95,16 +34,6 @@
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           margin: 1rem 0;
-        }
-
-        .project-cards-second {
-          text-align: center;
-          font-size: 1.5rem;
-        }
-
-        .project-cards-third {
-          text-align: center;
-          font-size: 1.5rem;
         }
       }
     }
@@ -125,12 +54,6 @@
   animation-fill-mode: forwards;
 }
 
-@media screen and (max-width: 768px){
-    .project .project-box .project-content .project-tabs{
-        width: 75%;
-    }    
-}
-
 @media screen and (max-width: 486px) {
   .project {
     padding: 1.5rem 0.8rem;
@@ -143,16 +66,5 @@
   .project .project-box .project-content .project-cards .project-cards-first {
     grid-template-columns: repeat(2, 1fr);
     margin: 0.6rem 0;
-  }
-
-  .project .project-box .project-content .project-tabs{
-    margin: 2rem;
-    width: 75%;
-    border: 3px solid white;
-    border-radius: 30px;
-
-    p{
-        font-size: 1rem;
-    }
   }
 }

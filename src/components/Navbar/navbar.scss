@@ -7,9 +7,17 @@
   transition: all 0.3s ease-in-out;
   display: flex;
 
-  .logo {
-    width: max(60px,10%);
+  .backLogo {
+    width: max(60px, 10%);
+    position: relative;
     margin-right: 1.5rem;
+
+    .logo {
+      width: 100%;
+      position: absolute;
+      left: -30%;
+      top: 0;
+    }
   }
 
   .nav-links {
@@ -46,7 +54,6 @@
         margin-right: 10px;
         align-items: center;
         justify-content: center;
-        border: 1px slid rgba(255, 255, 255, 0.5);
         position: relative;
         overflow: hidden;
 
@@ -165,7 +172,7 @@
 
 @media screen and (max-width: 1120px) {
   .nav {
-    padding: 1.5rem 3.5rem;
+    padding: 1rem 3.5rem;
   }
 
   .nav .nav-links .nav-routes .nav-anchors {
@@ -189,7 +196,7 @@
 
 @media screen and (max-width: 875px) {
   .nav {
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2.5rem;
   }
 
   .nav .nav-links .nav-routes .nav-anchors {
@@ -215,7 +222,7 @@
 
 @media screen and (max-width: 620px) {
   .nav {
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .nav .nav-links .nav-routes .nav-anchors {

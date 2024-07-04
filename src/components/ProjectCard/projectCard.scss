@@ -1,48 +1,34 @@
 .projectCard {
   width: 100%;
-  margin: 1rem 1.5rem;
+  margin: 1rem 0;
 
   .projectCard-img {
     position: relative;
     width: 90%;
+    margin-bottom: 0.5rem;
 
     img {
       width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      object-position: center;
       height: auto;
       border-radius: 30px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    &::before {
-      content: "Using React and Node JS";
-      border-radius: 30px;
-      position: absolute;
-      opacity: 0;
-      background-color: palevioletred;
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-      align-items: center;
-      width: 100%;
-      height: 0%;
-      font-size: 1.4rem;
-      font-weight: 700;
-      transition: all 0.5s ease-in-out;
-    }
-
-    &:hover {
-      &::before {
-        height: 100%;
-        opacity: 0.8;
-      }
+      cursor: pointer;
     }
   }
 
   .projectCard-desc {
-    padding: 0 0.5rem;
+    padding: 0 1rem 0 0;
 
     h4 {
       font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+
+      &:hover {
+        color: #e846ba;
+        cursor: pointer;
+      }
     }
 
     p {
@@ -52,53 +38,53 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .projectCard{
-        .projectCard-img{
-            &::before{
-                font-size: 1.1rem;
-            }
-        }
+  .projectCard {
+    .projectCard-img {
+      &::before {
+        font-size: 1.1rem;
+      }
     }
+  }
 }
 
-@media screen and (max-width: 945px){
-    .projectCard{
-        margin: 1rem 1.2rem;
+@media screen and (max-width: 945px) {
+  .projectCard {
+    margin: 1rem 1.2rem;
 
-        .projectCard-desc{
-            h4{
-                font-size: 1.1rem;
-            }
-        }
+    .projectCard-desc {
+      h4 {
+        font-size: 1.1rem;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .projectCard{
-        margin: 1rem 1rem;
+  .projectCard {
+    margin: 1rem 1rem;
 
-        .projectCard-desc{
-            h4{
-                font-size: 1rem;
-            }
-            p{
-                font-size: 0.9rem;
-            }
-        }
+    .projectCard-desc {
+      h4 {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 486px) {
-    .projectCard{
-        margin: 1rem 0.8rem;
+  .projectCard {
+    margin: 1rem 0.8rem;
 
-        .projectCard-desc{
-            h4{
-                font-size: 0.9rem;
-            }
-            p{
-                font-size: 0.8rem;
-            }
-        }
+    .projectCard-desc {
+      h4 {
+        font-size: 0.9rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
     }
+  }
 }

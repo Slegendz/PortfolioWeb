@@ -50,7 +50,7 @@ const Newsletter = ({ onValidated, status, message }) => {
             <h3> Subscribe to our Newsletter </h3>
           ) : (
             <div>
-              <h3> Subscribe to our </h3>
+              <h3> Subscribe to NewsLetter</h3>
               <h3> Newsletter </h3>
             </div>
           )}
